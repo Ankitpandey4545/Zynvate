@@ -302,8 +302,9 @@ export function Navbar() {
                   {dropdownItems ? (
                     <div
                       className={cn(
-                        "absolute left-1/2 top-full z-50 max-w-[calc(100vw-2rem)] -translate-x-1/2 pt-2",
-                        isWorks ? "w-[min(96rem,calc(96vw-1rem))]" : "w-[24rem]",
+                        isWorks
+                          ? "fixed left-1/2 top-[5.25rem] z-50 w-[min(96rem,calc(100vw-2rem))] -translate-x-1/2 pt-2"
+                          : "absolute left-1/2 top-full z-50 w-[24rem] max-w-[calc(100vw-2rem)] -translate-x-1/2 pt-2",
                         menuOpen ? "visible" : "pointer-events-none invisible",
                       )}
                     >
