@@ -89,7 +89,6 @@ export function Navbar() {
   const [menu, setMenu] = useState<null | "services" | "products" | "works">(null);
   const [workProductsOpen, setWorkProductsOpen] = useState(false);
   const [workApisOpen, setWorkApisOpen] = useState(false);
-  const menuCloseTimer = useRef<number | null>(null);
   const works = featuredProjects();
   const [projectModalOpen, setProjectModalOpen] = useState(false);
   const [indicator, setIndicator] = useState<{ left: number; right: number } | null>(null);
@@ -99,22 +98,20 @@ export function Navbar() {
   const toggleRef = useRef<HTMLButtonElement>(null);
   const wasOpen = useRef(false);
 
-  const cancelMenuClose = () => {
-    if (menuCloseTimer.current !== null) {
-      window.clearTimeout(menuCloseTimer.current);
-      menuCloseTimer.current = null;
-    }
-  };
-  const scheduleMenuClose = () => {
-    cancelMenuClose();
-    menuCloseTimer.current = window.setTimeout(() => {
+  useEffect(() => {
+    const closeOnOutsidePointer = (event: PointerEvent) => {
+      if (event.target instanceof Node && listRef.current?.contains(event.target)) return;
       setMenu(null);
-      menuCloseTimer.current = null;
-    }, 350);
-  };
-
-  useEffect(() => () => {
-    if (menuCloseTimer.current !== null) window.clearTimeout(menuCloseTimer.current);
+    };
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMenu(null);
+    };
+    document.addEventListener("pointerdown", closeOnOutsidePointer);
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.removeEventListener("pointerdown", closeOnOutsidePointer);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
   }, []);
 
   // Hide on scroll down, show on scroll up
@@ -253,7 +250,9 @@ export function Navbar() {
           <ul
             ref={listRef}
             className="relative hidden items-center gap-1 lg:flex"
-            onMouseLeave={scheduleMenuClose}
+            onMouseLeave={() => {
+              if (menu !== "works") setMenu(null);
+            }}
           >
             <span
               aria-hidden
@@ -280,7 +279,6 @@ export function Navbar() {
                 <li
                   key={l.href}
                   onMouseEnter={() => {
-                    cancelMenuClose();
                     setMenu(menuKey);
                     if (!dropdownItems) return;
                     for (const item of dropdownItems) {
@@ -291,7 +289,7 @@ export function Navbar() {
                   onFocus={() => setMenu(menuKey)}
                   onBlur={(event) => {
                     const next = event.relatedTarget;
-                    if (next instanceof Node && event.currentTarget.contains(next)) return;
+                    if (next instanceof Node && listRef.current?.contains(next)) return;
                     setMenu(null);
                   }}
                   className="relative"
@@ -321,8 +319,6 @@ export function Navbar() {
                   </Link>
                   {dropdownItems ? (
                     <div
-                      onMouseEnter={cancelMenuClose}
-                      onMouseLeave={scheduleMenuClose}
                       className={cn(
                         isWorks
                           ? "fixed inset-x-4 top-[5.25rem] z-50 mx-auto w-auto max-w-[80rem] pt-2"
