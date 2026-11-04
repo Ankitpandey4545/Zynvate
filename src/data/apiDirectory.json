@@ -1,0 +1,2056 @@
+{
+  "collections": [
+    {
+      "name": "Global Verification Hubs",
+      "count": 8,
+      "description": "Country-level global verification landing pages for quick navigation into regional API collections."
+    },
+    {
+      "name": "CKYC & Verification",
+      "count": 26,
+      "description": "First CKYC and verification-focused batch."
+    },
+    {
+      "name": "GST, MCA & Business",
+      "count": 26,
+      "description": "Second batch covering GST, MCA, lending, domain, and business verification flows."
+    },
+    {
+      "name": "OCR & Contact Intelligence",
+      "count": 28,
+      "description": "Third batch covering OCR APIs and mobile, email, banking, and identity intelligence APIs."
+    },
+    {
+      "name": "Telecom, Video KYC & eSign",
+      "count": 28,
+      "description": "Fourth batch covering telecom intelligence, video KYC, eSign, signature, and credit report workflows."
+    },
+    {
+      "name": "Aadhaar & Core KYC",
+      "count": 104,
+      "description": "Folder batch covering identity, OCR, banking, telecom, credit, workforce, fraud, healthcare, and onboarding APIs."
+    },
+    {
+      "name": "Use-case Verification APIs",
+      "count": 109,
+      "description": "Folder batch covering Aadhaar, PAN, vehicle, FSSAI, DigiLocker, MSME, academic, and business verification APIs."
+    },
+    {
+      "name": "International, Risk & Utilities",
+      "count": 73,
+      "description": "Seventh batch covering address intelligence, security, international verification, payments, and workflow automation APIs."
+    }
+  ],
+  "apis": [
+    {
+      "title": "UAE Global Verification Hub",
+      "path": "/global/uae",
+      "collection": "Global Verification Hubs"
+    },
+    {
+      "title": "UK Global Verification Hub",
+      "path": "/global/uk",
+      "collection": "Global Verification Hubs"
+    },
+    {
+      "title": "Malaysia Global Verification Hub",
+      "path": "/global/malaysia",
+      "collection": "Global Verification Hubs"
+    },
+    {
+      "title": "Singapore Global Verification Hub",
+      "path": "/global/singapore",
+      "collection": "Global Verification Hubs"
+    },
+    {
+      "title": "Oman Global Verification Hub",
+      "path": "/global/oman",
+      "collection": "Global Verification Hubs"
+    },
+    {
+      "title": "Qatar Global Verification Hub",
+      "path": "/global/qatar",
+      "collection": "Global Verification Hubs"
+    },
+    {
+      "title": "Canada Global Verification Hub",
+      "path": "/global/canada",
+      "collection": "Global Verification Hubs"
+    },
+    {
+      "title": "Bangladesh Global Verification Hub",
+      "path": "/global/bangladesh",
+      "collection": "Global Verification Hubs"
+    },
+    {
+      "title": "CKYC Search API",
+      "path": "/ckyc-search-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "CKYC Verification API",
+      "path": "/ckyc-verification-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "CKYC API",
+      "path": "/ckyc-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "CKYCRR API",
+      "path": "/ckycrr-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "CKYCRR 2.0 Data API",
+      "path": "/ckycrr-2-data-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "CKYC Card Verification API",
+      "path": "/ckyc-card-verification-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "CKYC Bulk Download API",
+      "path": "/ckyc-bulk-download-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "Legal Entity CKYC API",
+      "path": "/legal-entity-ckyc-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "Investor Verification API",
+      "path": "/investor-verification-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "TIN Verification API",
+      "path": "/tin-verification-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "Ultimate Beneficial Owner API",
+      "path": "/ultimate-beneficial-owner-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "Eway Bill Verification API",
+      "path": "/eway-bill-verification-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "US Trademark Check API",
+      "path": "/us-trademark-check-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "BBPS API",
+      "path": "/bbps-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "HUID Verification API",
+      "path": "/huid-verification-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "Account Aggregator API By Mobile Number",
+      "path": "/account-aggregator-api-mobile-number",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "UDIN Verification API",
+      "path": "/udin-verification-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "TDS-206 Compliance API",
+      "path": "/tds-206-compliance-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "TAN Verification API",
+      "path": "/tan-verification-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "IEC Verification API",
+      "path": "/iec-verification-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "ICSI Verification API",
+      "path": "/icsi-verification-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "Document Verification API",
+      "path": "/document-verification-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "PAN to IEC API",
+      "path": "/pan-to-iec-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "Account Aggregator API By Account Number",
+      "path": "/account-aggregator-api-account-number",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "Government ID Check API",
+      "path": "/government-id-check-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "CRIF Credit Report API",
+      "path": "/crif-credit-report-api",
+      "collection": "CKYC & Verification"
+    },
+    {
+      "title": "PAN Bank Account Link Status Check API",
+      "path": "/pan-bank-account-link-status-check-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "GST Verification API",
+      "path": "/gst-verification-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "Search GST Number by Name API",
+      "path": "/search-gst-number-by-name-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "CRILC Data API",
+      "path": "/crilc-data-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "Unified Lending Interface API",
+      "path": "/unified-lending-interface-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "TAN to PAN API",
+      "path": "/tan-to-pan-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "TRAI MNRL API",
+      "path": "/trai-mnrl-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "Domain Verification API",
+      "path": "/domain-verification-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "LEI Validation API",
+      "path": "/lei-validation-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "Loan Defaulter Check API",
+      "path": "/loan-defaulter-check-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "KYB Verification API",
+      "path": "/kyb-verification-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "GST Certificate Download API",
+      "path": "/gst-certificate-download-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "GST to MCC API",
+      "path": "/gst-to-mcc-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "GST Analysis API",
+      "path": "/gst-analysis-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "GST OTP Verification API",
+      "path": "/gst-otp-verification-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "GST to Phone Number API",
+      "path": "/gst-to-phone-number-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "GST Number Search by PAN API",
+      "path": "/gst-number-search-by-pan-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "GST Return Status API",
+      "path": "/gst-return-status-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "GST Monitoring API",
+      "path": "/gst-monitoring-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "GST to HSN API",
+      "path": "/gst-to-hsn-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "HSN to GST API",
+      "path": "/hsn-to-gst-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "HSN Code Search API",
+      "path": "/hsn-code-search-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "MCA Data V3 Portal API",
+      "path": "/mca-data-v3-portal-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "MCA Struck Off Companies Check API",
+      "path": "/mca-struck-off-companies-check-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "MCA Data API CIN DIN",
+      "path": "/mca-data-api-cin-din",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "MCA Filed Doc Pull API",
+      "path": "/mca-filed-doc-pull-api",
+      "collection": "GST, MCA & Business"
+    },
+    {
+      "title": "Blood Test Report OCR API",
+      "path": "/blood-test-report-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Invoice OCR API",
+      "path": "/invoice-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Receipt OCR API",
+      "path": "/receipt-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Passport OCR API",
+      "path": "/passport-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Photo ID OCR API",
+      "path": "/photo-id-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Voter ID OCR API",
+      "path": "/voter-id-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Bank Statement OCR API",
+      "path": "/bank-statement-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Online OCR API",
+      "path": "/online-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "e-Invoice OCR API",
+      "path": "/e-invoice-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Cheque OCR API",
+      "path": "/cheque-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "PDF to Excel OCR API",
+      "path": "/pdf-to-excel-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "PAN Card OCR API",
+      "path": "/pan-card-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Payslip OCR API",
+      "path": "/payslip-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Aadhaar Card OCR API",
+      "path": "/aadhaar-card-ocr-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Mobile Number to Vehicle RC API",
+      "path": "/mobile-number-to-vehicle-rc-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Phone Number to Udyam Verification API",
+      "path": "/phone-number-to-udyam-verification-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Phone Number to MSME Verification API",
+      "path": "/phone-number-to-msme-verification-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Alternative Mobile Number Finder API",
+      "path": "/alternative-mobile-number-finder-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Mobile Number to PAN API",
+      "path": "/mobile-number-to-pan-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Mobile Number to VPA API",
+      "path": "/mobile-number-to-vpa-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Mobile Number to Name API",
+      "path": "/mobile-number-to-name-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Find Email ID By Mobile Number API",
+      "path": "/find-email-id-by-mobile-number-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Phone Number to Bank Account Details API",
+      "path": "/phone-number-to-bank-account-details-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Phone Number to Bank Account Number API",
+      "path": "/phone-number-to-bank-account-number-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Email To Phone Number API",
+      "path": "/email-to-phone-number-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Mobile To UAN API",
+      "path": "/mobile-to-uan-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Mobile To Driving License API",
+      "path": "/mobile-to-driving-license-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "PAN to Mobile API",
+      "path": "/pan-to-mobile-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "Mobile Vintage API",
+      "path": "/mobile-vintage-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Mobile UAN Link Check API",
+      "path": "/mobile-uan-link-check-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "IMEI Verification API",
+      "path": "/imei-verification-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "SIM Swap Detection API",
+      "path": "/sim-swap-detection-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Mobile Bank Link Check API",
+      "path": "/mobile-bank-link-check-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Telecom Verification API",
+      "path": "/telecom-verification-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Number Intelligence API",
+      "path": "/number-intelligence-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Aadhaar to Phone Number API",
+      "path": "/aadhaar-to-phone-number-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Aadhaar Phone Link Check API",
+      "path": "/aadhaar-phone-link-check-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Mobile Number To Aadhaar Number API",
+      "path": "/mobile-number-to-aadhaar-number-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Mobile Number to Multiple Accounts API",
+      "path": "/mobile-number-to-multiple-accounts-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Video KYC API",
+      "path": "/video-kyc-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Video PD",
+      "path": "/video-pd",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "V-CIP KYC",
+      "path": "/v-cip-kyc",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Smart Consent",
+      "path": "/smart-consent",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Video KYC PCVC",
+      "path": "/video-kyc-pcvc",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Biometric eSign",
+      "path": "/biometric-esign",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "IRIS eSign API",
+      "path": "/iris-esign-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Face eSign API",
+      "path": "/face-esign-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Face Verification Based Aadhaar eSign",
+      "path": "/face-verification-based-aadhaar-esign",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Signature Detection Matching API",
+      "path": "/signature-detection-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "PAN eSign API",
+      "path": "/pan-esign-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "PFX Document eSign",
+      "path": "/pfx-document-esign",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "e-Stamp API",
+      "path": "/e-stamp-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Wet Signature Verify API",
+      "path": "/wet-signature-verify-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "FICO Credit Report API",
+      "path": "/fico-credit-report-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "TransUnion Credit Report API",
+      "path": "/transunion-credit-report-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Mobile to GST API",
+      "path": "/mobile-to-gst-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "1:N Face Search API",
+      "path": "/1-n-face-search-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar Authentication API",
+      "path": "/aadhaar-authentication-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar Bank Account Seeding Status API",
+      "path": "/aadhaar-bank-account-seeding-status-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar Card to Ration Card API",
+      "path": "/aadhaar-card-to-ration-card-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar Masking API",
+      "path": "/aadhaar-masking-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar Name Match API",
+      "path": "/aadhaar-name-match-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar OKYC 2.0",
+      "path": "/aadhaar-okyc-2-0",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar OKYC for Delivery & Logistics",
+      "path": "/aadhaar-okyc-for-delivery-logistics",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar OKYC for Educational Institutions",
+      "path": "/aadhaar-okyc-for-educational-institutions",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar OKYC for Gig Worker Verification",
+      "path": "/aadhaar-okyc-for-gig-worker-verification",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar OKYC for Government Welfare Schemes",
+      "path": "/aadhaar-okyc-for-government-welfare-schemes",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar OKYC for Health Insurance",
+      "path": "/aadhaar-okyc-for-health-insurance",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar OKYC for Hospital Patient Verification",
+      "path": "/aadhaar-okyc-for-hospital-patient-verification",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar OKYC for Life Insurance",
+      "path": "/aadhaar-okyc-for-life-insurance",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar OKYC for Ride-Sharing",
+      "path": "/aadhaar-okyc-for-ride-sharing",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar OKYC for Vehicle Rentals",
+      "path": "/aadhaar-okyc-for-vehicle-rentals",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar to Credit Report API",
+      "path": "/aadhaar-to-credit-report-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar Verification API",
+      "path": "/aadhaar-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Aadhaar Vintage API",
+      "path": "/aadhaar-vintage-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "ABHA Card Verification API",
+      "path": "/abha-card-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Address Matching API",
+      "path": "/address-matching-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Address Proof Verification API",
+      "path": "/address-proof-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Address Verification API",
+      "path": "/address-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Age Verification API",
+      "path": "/age-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "AIS Verification API",
+      "path": "/ais-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "APAAR Card Verification API",
+      "path": "/apaar-card-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Background Verification API",
+      "path": "/background-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Bank Account Verification API",
+      "path": "/bank-account-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Bank Statement Analyzer API",
+      "path": "/bank-statement-analyzer-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Bank Statement Parsing API",
+      "path": "/bank-statement-parsing-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "CIBIL Credit Report API",
+      "path": "/cibil-credit-report-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Covid-19 Verification API",
+      "path": "/covid-19-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Credit Bureau : Credit Score API",
+      "path": "/credit-bureau-credit-score-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Credit Score Check API",
+      "path": "/credit-score-check-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Death Certificate Verification API",
+      "path": "/death-certificate-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "DigiBoost SDK",
+      "path": "/digiboost-sdk",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Disability Verification API",
+      "path": "/disability-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Doctor Verification API",
+      "path": "/doctor-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Document Forgery Detection API",
+      "path": "/document-forgery-detection-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "DPDP Consent Management Platform",
+      "path": "/dpdp-consent-management-platform",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Driving Licence Verification API",
+      "path": "/driving-licence-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Drug License Verification API",
+      "path": "/drug-license-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Due Diligence Check API",
+      "path": "/due-diligence-check-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "E Shram Card Verification API",
+      "path": "/e-shram-card-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Emirates ID OCR API",
+      "path": "/emirates-id-ocr-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Emirates ID Verification API",
+      "path": "/emirates-id-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Employment History by UAN API",
+      "path": "/employment-history-by-uan-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Employment Monitoring API",
+      "path": "/employment-monitoring-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Employment Verification API",
+      "path": "/employment-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "ePassport Verification API",
+      "path": "/epassport-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "EPFO Verification API",
+      "path": "/epfo-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Equifax Credit Report API",
+      "path": "/equifax-credit-report-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "ESIC Verification API",
+      "path": "/esic-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Experian Credit Report API",
+      "path": "/experian-credit-report-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Face Anti Spoofing API",
+      "path": "/face-anti-spoofing-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Face Match API",
+      "path": "/face-match-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "FACIS Verification API",
+      "path": "/facis-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Fake Document Detection API",
+      "path": "/fake-document-detection-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "IBAN Verification API",
+      "path": "/iban-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Identity Verification API",
+      "path": "/identity-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "IFSC Code Verification API",
+      "path": "/ifsc-code-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Impersonation Detection API",
+      "path": "/impersonation-detection-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Income Calculator API",
+      "path": "/income-calculator-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Income Finder API",
+      "path": "/income-finder-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "International Passport Verification API",
+      "path": "/international-passport-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "ITR Verification API (Without Password)",
+      "path": "/itr-verification-api-without-password",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Labour Verification API",
+      "path": "/labour-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Liveness Check API",
+      "path": "/liveness-check-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Malaysia Driving License Verification API",
+      "path": "/malaysia-driving-license-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Malaysia MyKad Verification API",
+      "path": "/malaysia-mykad-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Money Mule Detection API",
+      "path": "/money-mule-detection-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Mule Hunter API",
+      "path": "/mule-hunter-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Mule Score API",
+      "path": "/mule-score-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Multi Bureau Pull API",
+      "path": "/multi-bureau-pull-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Negative Due Diligence API",
+      "path": "/negative-due-diligence-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "NMC Verification API",
+      "path": "/nmc-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "NRO:NRE Verification API",
+      "path": "/nro-nre-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Nurse Verification API",
+      "path": "/nurse-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "OCI Card Verification API",
+      "path": "/oci-card-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "PAN to UAN API",
+      "path": "/pan-to-uan-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Passport Verification API",
+      "path": "/passport-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Payout API",
+      "path": "/payout-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Penny Less Bank Account Verification API",
+      "path": "/penny-less-bank-account-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Pension Certificate Verification API",
+      "path": "/pension-certificate-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "PEP Match API",
+      "path": "/pep-match-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Pharmacy Bill Verification API",
+      "path": "/pharmacy-bill-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Ration Card Verification API",
+      "path": "/ration-card-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Reverse Penny Drop API",
+      "path": "/reverse-penny-drop-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Salary Analysis API",
+      "path": "/salary-analysis-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Salary Verification API",
+      "path": "/salary-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Samagra ID Verification API",
+      "path": "/samagra-id-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Selfie Verification API",
+      "path": "/selfie-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Singapore ACRA Data API",
+      "path": "/global/singapore/singapore-acra-data-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Skip Tracing API",
+      "path": "/skip-tracing-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Skip Tracing Service",
+      "path": "/skip-tracing-service",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "TDS Check API",
+      "path": "/tds-check-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "TIS Verification API",
+      "path": "/tis-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "UAE Verification API",
+      "path": "/global/uae/uae-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "UAN Verification API",
+      "path": "/uan-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "UK Companies House Data API",
+      "path": "/global/uk/uk-companies-house-data-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "UMID Card Verification API",
+      "path": "/umid-card-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "UPI ID Verification API",
+      "path": "/upi-id-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "Voter ID Verification API",
+      "path": "/voter-id-verification-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "WhatsApp KYC API",
+      "path": "/whatsapp-kyc-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "10th Marksheet Verification API – Instantly Verify Secondary School Academic Records",
+      "path": "/10th-marksheet-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "12th Marksheet Verification API – Instantly Verify Higher Secondary Academic Records",
+      "path": "/12th-marksheet-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar Based Passenger Boarding API",
+      "path": "/aadhaar-based-passenger-boarding-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar Data Vault API",
+      "path": "/aadhaar-data-vault-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar Face Match – AI-Powered Facial Matching for Secure Identity Verification",
+      "path": "/aadhaar-face-match",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar Insurance Verification API",
+      "path": "/aadhaar-insurance-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar KYC for Vehicle Rentals – Fast, Secure & Paperless Customer Verification",
+      "path": "/aadhaar-kyc-for-vehicle-rentals",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar Offline Airport Check-In API",
+      "path": "/aadhaar-offline-airport-check-in-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar Offline KYC for NBFCs API",
+      "path": "/aadhaar-offline-kyc-for-nbfcs-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar Offline Verification for Banks API",
+      "path": "/aadhaar-offline-verification-for-banks-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar OKYC API",
+      "path": "/aadhaar-okyc-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar OVSE API",
+      "path": "/aadhaar-ovse-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar OVSE for Fintech Onboarding API",
+      "path": "/aadhaar-ovse-for-fintech-onboarding-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar Paperless Offline e-KYC API",
+      "path": "/aadhaar-paperless-offline-e-kyc-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar QR-Based Event Entry API",
+      "path": "/aadhaar-qr-based-event-entry-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar to Email API",
+      "path": "/aadhaar-to-email-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar to PAN API",
+      "path": "/aadhaar-to-pan-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar Verification on WhatsApp – Verify Customers Seamlessly Through WhatsApp",
+      "path": "/aadhaar-verification-on-whatsapp",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar XML Verification API",
+      "path": "/aadhaar-xml-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar-Based Attendance API",
+      "path": "/aadhaar-based-attendance-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar-Based Driver Verification API",
+      "path": "/aadhaar-based-driver-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar-Based Employee Onboarding API",
+      "path": "/aadhaar-based-employee-onboarding-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar-Based Payroll Setup API",
+      "path": "/aadhaar-based-payroll-setup-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar-Based Society Entry",
+      "path": "/aadhaar-based-society-entry",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar-Based Ticket API",
+      "path": "/aadhaar-based-ticket-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Aadhaar-Verified Exam Entry API",
+      "path": "/aadhaar-verified-exam-entry-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Age Verification with Aadhaar API",
+      "path": "/age-verification-with-aadhaar-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "APAAR Card OCR API",
+      "path": "/apaar-card-ocr-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Bike Price Check API – Instantly Access Accurate Two-Wheeler Valuation Data",
+      "path": "/bike-price-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Car Price Check API – Instantly Access Accurate Car Valuation and Market Pricing",
+      "path": "/car-price-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Challan Monitoring API – Continuously Track Traffic Challans in Real Time",
+      "path": "/challan-monitoring-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Challan Payment API – Enable Seamless Traffic Challan Payments Digitally",
+      "path": "/challan-payment-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Chassis Number to RC API – Retrieve Vehicle Registration Details Using Chassis Number",
+      "path": "/chassis-number-to-rc-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "CKYC Download API – Retrieve Customer KYC Records Instantly from the Central KYC Registry",
+      "path": "/ckyc-download-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "CKYC Upload API – Seamlessly Upload Customer KYC Records to the Central KYC Registry",
+      "path": "/ckyc-upload-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Company Monitoring API – Continuously Monitor Corporate Changes in Real Time",
+      "path": "/company-monitoring-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Contact Verification via Aadhaar OVSE API",
+      "path": "/contact-verification-via-aadhaar-ovse-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Corporate Signatory Details API – Instantly Retrieve Authorized Signatory Information",
+      "path": "/corporate-signatory-details-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "DigiLocker Aadhaar Verification API – Verify Aadhaar Securely Through DigiLocker",
+      "path": "/digilocker-aadhaar-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "DigiLocker API – Enable Secure Digital Document Retrieval and Verification",
+      "path": "/digilocker-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Digilocker PAN Verification API – Verify PAN Instantly Using DigiLocker",
+      "path": "/digilocker-pan-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "DIN KYC Status Check API – Instantly Verify Director KYC Compliance Status",
+      "path": "/din-kyc-status-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "DIN To PAN API – Instantly Retrieve PAN Details Using Director Identification Number",
+      "path": "/din-to-pan-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "DOB Check By PAN API – Instantly Verify Date of Birth Using PAN Details",
+      "path": "/dob-check-by-pan-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "eAadhaar Verification API",
+      "path": "/eaadhaar-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Entity Locker API – Securely Store, Manage, and Access Verified Documents Digitally",
+      "path": "/entity-locker-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Face Verification with Aadhaar – Strengthen Digital Identity Verification with Facial Authentication",
+      "path": "/face-verification-with-aadhaar",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "FASTag ID To RC Details API – Retrieve Complete Vehicle RC Information Using FASTag ID",
+      "path": "/fastag-id-to-rc-details-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "FASTag Monitoring API – Continuously Monitor FASTag Status and Activity in Real Time",
+      "path": "/fastag-monitoring-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "FASTag To VRN API – Instantly Retrieve Vehicle Registration Numbers from FASTag IDs",
+      "path": "/fastag-to-vrn-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Fastag Verification API",
+      "path": "/fastag-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Form 16 OCR API – Instantly Extract Salary and Tax Data from Form 16",
+      "path": "/form-16-ocr-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "FSSAI Certificate Download API – Instantly Download and Retrieve FSSAI Certificates",
+      "path": "/fssai-certificate-download-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "FSSAI Certificate OCR API – Extract and Verify FSSAI Certificate Data Instantly",
+      "path": "/fssai-certificate-ocr-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "FSSAI Comprehensive API",
+      "path": "/fssai-comprehensive-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "FSSAI License Expiry Check API",
+      "path": "/fssai-license-expiry-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Guest Check-in via Aadhaar API",
+      "path": "/guest-check-in-via-aadhaar-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "HSN to MCC API – Instantly Map HSN Codes to Merchant Category Codes",
+      "path": "/hsn-to-mcc-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "IDV Calculator API – Instantly Calculate Accurate Insured Declared Value",
+      "path": "/idv-calculator-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Insurance Monitoring API – Continuously Monitor Vehicle Insurance Status in Real Time",
+      "path": "/insurance-monitoring-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "ITR Compliance Check API – Instantly Verify Income Tax Return Filing Compliance",
+      "path": "/itr-compliance-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "License Plate Recognition API",
+      "path": "/license-plate-recognition-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "MSME and Struck Off Status Check API – Verify MSME Status and Company Activity in Real Time",
+      "path": "/msme-and-struck-off-status-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "MSME Monitoring API – Continuously Monitor MSME Businesses in Real Time",
+      "path": "/msme-monitoring-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN 2.0 Verification API",
+      "path": "/pan-2-0-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN 206AB Verification API – Instantly Verify Higher TDS Applicability Under Section 206AB",
+      "path": "/pan-206ab-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN Aadhaar Link Status API – Instantly Check PAN and Aadhaar Linking Status",
+      "path": "/pan-aadhaar-link-status-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN Card Verification API – Verify PAN Card Details Instantly for Secure Customer Onboarding",
+      "path": "/pan-card-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN Comprehensive API – Access Complete PAN Intelligence Through a Single API",
+      "path": "/pan-comprehensive-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN Tampering Detection API – Detect Altered, Forged, or Manipulated PAN Cards Instantly",
+      "path": "/pan-tampering-detection-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN to Aadhaar API – Instantly Retrieve and Verify PAN-Aadhaar Mapping",
+      "path": "/pan-to-aadhaar-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN to CIN API – Instantly Retrieve Company CIN Using PAN",
+      "path": "/pan-to-cin-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN To Company Information API – Retrieve Company Details Instantly Using PAN",
+      "path": "/pan-to-company-information-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN To Father_s Name API – Retrieve Father_s Name Using PAN for Enhanced Identity Verification",
+      "path": "/pan-to-father-s-name-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN to MSME Status API – Instantly Check MSME Registration Status Using PAN",
+      "path": "/pan-to-msme-status-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN Validation API – Validate PAN Instantly for Accurate and Compliant Customer Verification",
+      "path": "/pan-validation-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN Verification API – Instantly Verify PAN Details with Accuracy and Confidence",
+      "path": "/pan-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "QR Based Aadhaar Verification API",
+      "path": "/qr-based-aadhaar-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "RC Application Status Check API – Track Vehicle Registration Application Status in Real Time",
+      "path": "/rc-application-status-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "RC Owner Details API – Instantly Retrieve Vehicle Owner Information",
+      "path": "/rc-owner-details-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "RC Owner History API – Access Complete Vehicle Ownership History Instantly",
+      "path": "/rc-owner-history-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "RC Status Check By Vehicle Number API – Verify Vehicle Registration Status Instantly",
+      "path": "/rc-status-check-by-vehicle-number-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "RC to Chassis API – Instantly Retrieve Chassis Number from Vehicle Registration Number",
+      "path": "/rc-to-chassis-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "RC to FASTag Balance Check API – Instantly Check FASTag Balance Using Vehicle Registration Number",
+      "path": "/rc-to-fastag-balance-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "RC Vehicle Service History API – Access Vehicle Maintenance and Service Records Instantly",
+      "path": "/rc-vehicle-service-history-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "RC with Financer Details API – Access Vehicle Registration and Financer Information Instantly",
+      "path": "/rc-with-financer-details-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Reverse FASTag API – Retrieve Vehicle Details Using FASTag ID",
+      "path": "/reverse-fastag-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Secure Office Entry With Aadhaar",
+      "path": "/secure-office-entry-with-aadhaar",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Selective Aadhaar Sharing – Share Only the Information You Need",
+      "path": "/selective-aadhaar-sharing",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Stolen Vehicle Verification API – Instantly Check Stolen Vehicle Status in Real Time",
+      "path": "/stolen-vehicle-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Student Verification with Aadhaar API",
+      "path": "/student-verification-with-aadhaar-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Tenant Verification via Aadhaar API",
+      "path": "/tenant-verification-via-aadhaar-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Udyam Certificate Download API – Instantly Download MSME Registration Certificates",
+      "path": "/udyam-certificate-download-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Udyam Certificate Verification API – Instantly Verify MSME Registration Certificates",
+      "path": "/udyam-certificate-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Udyam Registration Check API – Instantly Check MSME Registration Status",
+      "path": "/udyam-registration-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Udyam Verification API – Instantly Verify MSME Registration Details",
+      "path": "/udyam-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Udyog Verification API",
+      "path": "/udyog-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Utility Bill OCR API – Extract and Verify Utility Bill Data Instantly",
+      "path": "/utility-bill-ocr-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Vahan Verification API – Access Comprehensive Vehicle Information in Real Time",
+      "path": "/vahan-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Vehicle Application Status API – Track Vehicle Application Status in Real Time",
+      "path": "/vehicle-application-status-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Vehicle Monitoring API – Continuously Monitor Vehicle Records and Receive Real-Time Alerts",
+      "path": "/vehicle-monitoring-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Vehicle Pollution Check API – Instantly Verify PUC Status and Emission Compliance",
+      "path": "/vehicle-pollution-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Vehicle Price Check API – Instantly Access Accurate Vehicle Valuation Data",
+      "path": "/vehicle-price-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Vehicle RC to Mobile Number API – Retrieve Registered Mobile Information from Vehicle Details",
+      "path": "/vehicle-rc-to-mobile-number-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Vehicle RC Verification API – Instantly Verify Vehicle Registration Certificate Details",
+      "path": "/vehicle-rc-verification-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Vehicle Tracking API – Track Vehicle Movement and Location in Real Time",
+      "path": "/vehicle-tracking-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Video Aadhaar Masking – Secure Sensitive Aadhaar Data in Customer Videos",
+      "path": "/video-aadhaar-masking",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "VIN Number Check API – Verify Vehicle Identity Using VIN Instantly",
+      "path": "/vin-number-check-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Visitor Management via Aadhaar API",
+      "path": "/visitor-management-via-aadhaar-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Address Parsing API",
+      "path": "/address-parsing-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "AI-Powered Name Match API",
+      "path": "/ai-powered-name-match-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Alternative Address Finder API",
+      "path": "/alternative-address-finder-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Alternative Email Finder API",
+      "path": "/alternative-email-id-finder-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Fraud Detection Software",
+      "path": "/anti-fraud-risk-and-policy-engine",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "API Protection Platform",
+      "path": "/api-protection",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Bangladesh National ID Verification API",
+      "path": "/bangladesh-national-id-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Barcode Scanner API",
+      "path": "/barcode-scanner-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Birth Certificate Verification API",
+      "path": "/birth-certificate-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Canada GST/HST Verification API",
+      "path": "/global/canada/canada-gst-hst-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Code & Asset Protection",
+      "path": "/code-and-asset-protection",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Darpan ID Verification API",
+      "path": "/darpan-id-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Data Breach API",
+      "path": "/data-breach-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Device Intelligence API",
+      "path": "/device-intelligence-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Digital Footprint Verification API",
+      "path": "/digital-footprint-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Digital KYC Regulations for Digital Lenders in India: Requirements, Process & Compliance Checklist",
+      "path": "/digital-kyc-regulations-for-digital-lenders-in-india-requirements-process-and-compliance-checklist",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Document Extraction API",
+      "path": "/document-extraction-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Dubai Vehicle Challan Check API",
+      "path": "/global/uae/dubai-vehicle-challan-check-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Dubai Vehicle Details API",
+      "path": "/global/uae/dubai-vehicle-details-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Dubai Vehicle Verification API",
+      "path": "/global/uae/dubai-vehicle-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Duplicate Account Detection",
+      "path": "/duplicate-account-detection",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "eCourts API",
+      "path": "/ecourts-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Electricity Bill Verification API",
+      "path": "/electricity-bill-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Email ID Verification API",
+      "path": "/email-id-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Emulator Detection API",
+      "path": "/emulator-detection",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "FNR Tracking API",
+      "path": "/fnr-tracking-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Fraud IP and Network Detection API",
+      "path": "/fraud-ip-and-network-detection-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Fraud Ring Detection",
+      "path": "/fraud-ring-detection-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Frida Detection API",
+      "path": "/frida-detection",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Fuel Prices API",
+      "path": "/fuel-prices-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Gas Connection Verification API",
+      "path": "/gas-connection-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Gold Price API",
+      "path": "/gold-price-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "GPS Spoofing Detection API",
+      "path": "/gps-spoofing-detection-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Gujarat Land Record Check API",
+      "path": "/gujarat-land-record-check-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Insurance Agent Verification API",
+      "path": "/insurance-agent-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Insurance Verification API",
+      "path": "/insurance-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "IRN Verification API",
+      "path": "/irn-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Land Record Check API",
+      "path": "/land-record-check-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Land Record Monitoring API",
+      "path": "/land-record-monitoring-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Mobile UPI Link Check API",
+      "path": "/mobile-upi-link-check-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Name Matching API",
+      "path": "/name-matching-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "National Permit Verification API",
+      "path": "/national-permit-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Oman Visa Verification API",
+      "path": "/oman-visa-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Payment Gateway",
+      "path": "/payment-gateway",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Prefill By Mobile API",
+      "path": "/prefill-by-mobile-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Prefill Report API",
+      "path": "/prefill-report-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Qatar ID Verification API",
+      "path": "/qatar-id-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "RERA Verification API",
+      "path": "/rera-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Root and Jailbreak Detection API",
+      "path": "/root-and-jailbreak-detection",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Shop Verification API",
+      "path": "/shop-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "SIM Binding API",
+      "path": "/sim-binding-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Singapore NRIC Verification API",
+      "path": "/global/singapore/singapore-nric-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Singapore UEN Check API",
+      "path": "/global/singapore/singapore-uen-check-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Contact Details Finder",
+      "path": "/contact-details-finder",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Telecom HLR API",
+      "path": "/telecom-hlr-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Toll Price API",
+      "path": "/toll-price-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE DED License Verification API",
+      "path": "/global/uae/uae-ded-license-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE DL Verification API",
+      "path": "/global/uae/uae-dl-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE ED License API",
+      "path": "/global/uae/uae-ed-license-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE Pass API",
+      "path": "/global/uae/uae-pass-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE Pass eSign API",
+      "path": "/global/uae/uae-pass-esign-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE Passport Verification API",
+      "path": "/global/uae/uae-passport-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE Trade License Verification API",
+      "path": "/global/uae/uae-trade-license-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE TRN OCR API",
+      "path": "/global/uae/uae-trn-ocr-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE TRN Verification API",
+      "path": "/global/uae/uae-trn-verification",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE Vehicle RC API",
+      "path": "/global/uae/uae-vehicle-rc-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE Vehicle RC OCR API",
+      "path": "/global/uae/uae-vehicle-rc-ocr-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UAE Visa Verification API",
+      "path": "/global/uae/uae-visa-verification-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "UPI to Bank Account Details API",
+      "path": "/upi-to-bank-account-details-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Vehicle Owner Details By Number Plate in Dubai API",
+      "path": "/global/uae/vehicle-owner-details-by-number-plate-in-dubai-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Voter to Bank Account Link Status API",
+      "path": "/voter-to-bank-account-link-status-api",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "VPN & Proxy Detection API",
+      "path": "/vpn-and-proxy-detection",
+      "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Vulnerability Assessment and Penetration Testing (VAPT)",
+      "path": "/vulnerability-assessment-and-penetration-testing-vapt",
+      "collection": "International, Risk & Utilities"
+    }
+  ]
+}
