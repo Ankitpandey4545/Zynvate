@@ -303,7 +303,7 @@ export function Navbar() {
                     <div
                       className={cn(
                         isWorks
-                          ? "fixed left-1/2 top-[5.25rem] z-50 w-[min(96rem,calc(100vw-2rem))] -translate-x-1/2 pt-2"
+                          ? "fixed inset-x-4 top-[5.25rem] z-50 mx-auto w-auto max-w-[80rem] pt-2"
                           : "absolute left-1/2 top-full z-50 w-[24rem] max-w-[calc(100vw-2rem)] -translate-x-1/2 pt-2",
                         menuOpen ? "visible" : "pointer-events-none invisible",
                       )}
