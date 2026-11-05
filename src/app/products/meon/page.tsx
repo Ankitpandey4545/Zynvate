@@ -53,9 +53,11 @@ export default function MeonProductsPage() {
               </div>
               <ul className="mt-4 grid gap-1 sm:grid-cols-2">
                 {category.items.map((product) => (
-                  <li key={product.slug} className="flex items-start gap-2 rounded-lg px-2 py-2 text-sm leading-snug text-foreground/75">
-                    <ArrowUpRight className="mt-0.5 size-3.5 shrink-0 text-primary/75" />
-                    {product.title}
+                  <li key={product.slug}>
+                    <Link href={`/products/meon/${product.slug}`} className="group flex min-h-10 items-start gap-2 rounded-lg px-2 py-2 text-sm leading-snug text-foreground/75 transition-colors hover:bg-secondary hover:text-primary">
+                      <ArrowUpRight className="mt-0.5 size-3.5 shrink-0 text-primary/75" />
+                      <span>{product.title}</span>
+                    </Link>
                   </li>
                 ))}
               </ul>
