@@ -310,17 +310,21 @@ export function Navbar() {
                               <ArrowUpRight className="ml-auto size-4 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
                             </Link>
                           ))}
-                          <div className="mt-2 space-y-1 border-t border-border pt-3">
-                            <Link href="/products" onClick={() => setMenu(null)} className="group/item flex items-center gap-4 rounded-2xl px-3 py-3 transition-colors hover:bg-secondary">
+                          <div className="mt-2 border-t border-border pt-3">
+                            <div className="flex items-center gap-4 rounded-2xl px-3 py-3">
                               <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-secondary text-primary"><Layers3 className="size-7" /></span>
-                              <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Products</span><span className="mt-1 block text-xs text-muted-foreground">Explore ZYNOVATE products and solutions.</span></span>
-                              <ArrowUpRight className="ml-auto size-4 shrink-0 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
-                            </Link>
-                            <Link href="/products/apis" onClick={() => setMenu(null)} className="group/item flex items-center gap-4 rounded-2xl px-3 py-3 transition-colors hover:bg-secondary">
-                              <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-secondary text-primary"><Braces className="size-7" /></span>
-                              <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Plug & Play APIs</span><span className="mt-1 block text-xs text-muted-foreground">Browse the complete ZYNOVATE API directory.</span></span>
-                              <ArrowUpRight className="ml-auto size-4 shrink-0 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
-                            </Link>
+                              <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Meon</span><span className="mt-1 block text-xs text-muted-foreground">Digital verification products & API suite</span></span>
+                            </div>
+                            <div className="ml-7 grid gap-1 border-l border-border pl-4 sm:grid-cols-2">
+                              <Link href="/products" onClick={() => setMenu(null)} className="group/item flex items-center justify-between rounded-xl px-3 py-3 transition-colors hover:bg-secondary">
+                                <span><span className="block text-sm font-semibold text-foreground">Products</span><span className="mt-1 block text-xs text-muted-foreground">Browse product solutions</span></span>
+                                <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
+                              </Link>
+                              <Link href="/products/apis" onClick={() => setMenu(null)} className="group/item flex items-center justify-between rounded-xl px-3 py-3 transition-colors hover:bg-secondary">
+                                <span><span className="block text-sm font-semibold text-foreground">API</span><span className="mt-1 block text-xs text-muted-foreground">Browse the complete API directory</span></span>
+                                <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
+                              </Link>
+                            </div>
                           </div>
                           <Link href="/works" onClick={() => setMenu(null)} className="mt-1 flex items-center justify-between rounded-xl border-t border-border px-3 py-3 text-xs font-semibold text-primary hover:bg-secondary">
                             Explore all works
@@ -494,17 +498,19 @@ export function Navbar() {
                       ))}
                     </ul>
                     {l.href === "/works" ? (
-                      <div className="mt-4 space-y-1 border-t border-border pt-3">
-                        <Link href="/products" onClick={go("/products")} tabIndex={open ? 0 : -1} className="flex items-center gap-3 rounded-xl px-2 py-3 transition-colors hover:bg-secondary">
+                      <div className="mt-4 border-t border-border pt-3">
+                        <div className="flex items-center gap-3 rounded-xl px-2 py-3">
                           <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary"><Layers3 className="size-5" /></span>
-                          <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Products</span><span className="mt-1 block text-xs text-muted-foreground">Explore ZYNOVATE products and solutions.</span></span>
-                          <ArrowUpRight className="ml-auto size-4 shrink-0 text-muted-foreground" />
-                        </Link>
-                        <Link href="/products/apis" onClick={go("/products/apis")} tabIndex={open ? 0 : -1} className="flex items-center gap-3 rounded-xl px-2 py-3 transition-colors hover:bg-secondary">
-                          <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary"><Braces className="size-5" /></span>
-                          <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Plug & Play APIs</span><span className="mt-1 block text-xs text-muted-foreground">Browse the complete ZYNOVATE API directory.</span></span>
-                          <ArrowUpRight className="ml-auto size-4 shrink-0 text-muted-foreground" />
-                        </Link>
+                          <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Meon</span><span className="mt-1 block text-xs text-muted-foreground">Digital verification products & API suite</span></span>
+                        </div>
+                        <div className="ml-5 grid gap-1 border-l border-border pl-3">
+                          <Link href="/products" onClick={go("/products")} tabIndex={open ? 0 : -1} className="flex items-center justify-between rounded-lg px-2 py-2 transition-colors hover:bg-secondary">
+                            <span><span className="block text-sm font-semibold text-foreground">Products</span><span className="mt-1 block text-xs text-muted-foreground">Browse product solutions</span></span><ArrowUpRight className="size-4 shrink-0 text-muted-foreground" />
+                          </Link>
+                          <Link href="/products/apis" onClick={go("/products/apis")} tabIndex={open ? 0 : -1} className="flex items-center justify-between rounded-lg px-2 py-2 transition-colors hover:bg-secondary">
+                            <span><span className="block text-sm font-semibold text-foreground">API</span><span className="mt-1 block text-xs text-muted-foreground">Browse the complete API directory</span></span><ArrowUpRight className="size-4 shrink-0 text-muted-foreground" />
+                          </Link>
+                        </div>
                       </div>
                     ) : null}
                   </div>
