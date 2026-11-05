@@ -316,7 +316,7 @@ export function Navbar() {
                               <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Meon</span><span className="mt-1 block text-xs text-muted-foreground">Digital verification products & API suite</span></span>
                             </div>
                             <div className="ml-7 grid gap-1 border-l border-border pl-4 sm:grid-cols-2">
-                              <Link href="/products" onClick={() => setMenu(null)} className="group/item flex items-center justify-between rounded-xl px-3 py-3 transition-colors hover:bg-secondary">
+                              <Link href="/products/meon" onClick={() => setMenu(null)} className="group/item flex items-center justify-between rounded-xl px-3 py-3 transition-colors hover:bg-secondary">
                                 <span><span className="block text-sm font-semibold text-foreground">Products</span><span className="mt-1 block text-xs text-muted-foreground">Browse product solutions</span></span>
                                 <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
                               </Link>
@@ -504,7 +504,7 @@ export function Navbar() {
                           <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Meon</span><span className="mt-1 block text-xs text-muted-foreground">Digital verification products & API suite</span></span>
                         </div>
                         <div className="ml-5 grid gap-1 border-l border-border pl-3">
-                          <Link href="/products" onClick={go("/products")} tabIndex={open ? 0 : -1} className="flex items-center justify-between rounded-lg px-2 py-2 transition-colors hover:bg-secondary">
+                          <Link href="/products/meon" onClick={go("/products/meon")} tabIndex={open ? 0 : -1} className="flex items-center justify-between rounded-lg px-2 py-2 transition-colors hover:bg-secondary">
                             <span><span className="block text-sm font-semibold text-foreground">Products</span><span className="mt-1 block text-xs text-muted-foreground">Browse product solutions</span></span><ArrowUpRight className="size-4 shrink-0 text-muted-foreground" />
                           </Link>
                           <Link href="/products/apis" onClick={go("/products/apis")} tabIndex={open ? 0 : -1} className="flex items-center justify-between rounded-lg px-2 py-2 transition-colors hover:bg-secondary">
