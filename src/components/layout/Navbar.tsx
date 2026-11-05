@@ -22,9 +22,7 @@ import { site } from "@/data/site";
 import { contact } from "@/data/contact";
 import { services } from "@/data/services";
 import { products } from "@/data/products";
-import { productMenuCategories } from "@/data/detailPages";
 import { featuredProjects } from "@/data/projects";
-import { aadhaarCoreKycSubcategories, aadhaarVerificationApis, apiCategories } from "@/data/apiCatalog";
 import type { Product, Project, Service } from "@/lib/types";
 import { useSmoothScroll } from "@/components/motion/SmoothScrollProvider";
 import { cn } from "@/lib/utils";
@@ -52,33 +50,6 @@ function coverOf(item: Service | Product | Project) {
   return "screenshots" in item ? item.screenshots?.cover : undefined;
 }
 
-function ApiDirectoryDropdown() {
-  return (
-    <div className="mt-2 border-t border-border pt-3">
-      <div className="mb-3 flex items-center justify-between gap-3">
-        <div><p className="text-xs font-bold uppercase tracking-wider text-primary">Plug & Play APIs</p><p className="mt-1 text-[0.68rem] text-muted-foreground">Aadhaar-first onboarding, eKYC, XML, and core identity checks.</p></div>
-        <Link href="/products/apis" className="shrink-0 text-xs font-semibold text-primary hover:underline">View all APIs ↗</Link>
-      </div>
-      <div className="mb-3 grid grid-cols-2 gap-1.5 sm:grid-cols-3 lg:grid-cols-5">
-        {apiCategories.map((category) => <span key={category} className="rounded-lg border border-border px-2 py-1.5 text-[0.62rem] leading-tight text-foreground/70">{category}</span>)}
-      </div>
-      <section className="border-t border-border pt-3">
-        <h3 className="text-xs font-bold text-foreground">Aadhaar & Core KYC</h3>
-        <div className="mt-2 rounded-lg bg-secondary/50 p-2.5">
-          <h4 className="text-[0.7rem] font-semibold text-foreground">Aadhaar Verification</h4>
-          <p className="mt-1 text-[0.65rem] leading-snug text-muted-foreground">Core Aadhaar verification, QR, authentication, and masking APIs.</p>
-          <ul className="mt-2 grid grid-cols-1 gap-x-4 sm:grid-cols-3 xl:grid-cols-4">
-            {aadhaarVerificationApis.map(({ title, href }) => <li key={href}><Link href={href} className="block rounded-md py-1 text-[0.67rem] leading-snug text-foreground/75 hover:text-primary hover:underline">{title} ↗</Link></li>)}
-          </ul>
-        </div>
-        <div className="mt-2 grid grid-cols-2 gap-1.5 lg:grid-cols-5">
-          {aadhaarCoreKycSubcategories.map((subcategory) => <span key={subcategory} className="rounded-md border border-border px-2 py-1.5 text-[0.64rem] text-foreground/65">{subcategory}</span>)}
-        </div>
-      </section>
-    </div>
-  );
-}
-
 export function Navbar() {
   const pathname = usePathname() ?? "/";
   const router = useRouter();
@@ -87,7 +58,6 @@ export function Navbar() {
   const [active, setActive] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
   const [menu, setMenu] = useState<null | "services" | "products" | "works">(null);
-  const [workExpandedSection, setWorkExpandedSection] = useState<null | "products" | "apis">(null);
   const works = featuredProjects();
   const [projectModalOpen, setProjectModalOpen] = useState(false);
   const [indicator, setIndicator] = useState<{ left: number; right: number } | null>(null);
@@ -340,28 +310,17 @@ export function Navbar() {
                               <ArrowUpRight className="ml-auto size-4 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
                             </Link>
                           ))}
-                          <div className="mt-2 border-t border-border pt-3">
-                            <div className="grid gap-2 px-2 sm:grid-cols-2">
-                              <div className="flex items-center justify-between rounded-xl border border-border bg-secondary/40 px-3 py-2">
-                                <Link href="/products" onClick={() => setMenu(null)} className="text-sm font-semibold tracking-wide text-foreground hover:text-primary">PRODUCTS <ArrowUpRight className="ml-1 inline size-3.5" /></Link>
-                                <button type="button" aria-label="Show product categories" aria-expanded={workExpandedSection === "products"} onClick={() => setWorkExpandedSection((section) => section === "products" ? null : "products")} className="rounded-md p-1 hover:bg-secondary"><ChevronDown className={cn("size-4 transition-transform", workExpandedSection === "products" && "rotate-180")} /></button>
-                              </div>
-                              <div className="flex items-center justify-between rounded-xl border border-border bg-secondary/40 px-3 py-2">
-                                <Link href="/products/apis" onClick={() => setMenu(null)} className="text-sm font-semibold tracking-wide text-foreground hover:text-primary">API <ArrowUpRight className="ml-1 inline size-3.5" /></Link>
-                                <button type="button" aria-label="Show API categories" aria-expanded={workExpandedSection === "apis"} onClick={() => setWorkExpandedSection((section) => section === "apis" ? null : "apis")} className="rounded-md p-1 hover:bg-secondary"><ChevronDown className={cn("size-4 transition-transform", workExpandedSection === "apis" && "rotate-180")} /></button>
-                              </div>
-                            </div>
-                            {workExpandedSection === "products" ? <div className="mt-3 grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-7">
-                              {productMenuCategories.map((category) => (
-                                <section key={category.slug} className="min-w-0">
-                                  <Link href={`/products/${category.slug}`} onClick={() => setMenu(null)} className="mb-2 flex min-h-10 items-center rounded-lg border-l-[3px] border-primary bg-secondary/70 px-3 text-[0.72rem] font-bold tracking-wide text-primary hover:bg-secondary">{category.title}</Link>
-                                  <ul className="space-y-0.5">
-                                    {category.items.map((product) => <li key={product.slug}><Link href={`/products/${product.slug}`} onClick={() => setMenu(null)} className="block rounded-md px-3 py-1.5 text-[0.72rem] leading-snug text-foreground/80 transition-colors hover:bg-secondary hover:text-primary">{product.title}</Link></li>)}
-                                  </ul>
-                                </section>
-                              ))}
-                            </div> : null}
-                            {workExpandedSection === "apis" ? <div className="mt-3 rounded-xl border border-border bg-secondary/30 px-3 py-2"><ApiDirectoryDropdown /></div> : null}
+                          <div className="mt-2 space-y-1 border-t border-border pt-3">
+                            <Link href="/products" onClick={() => setMenu(null)} className="group/item flex items-center gap-4 rounded-2xl px-3 py-3 transition-colors hover:bg-secondary">
+                              <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-secondary text-primary"><Layers3 className="size-7" /></span>
+                              <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Products</span><span className="mt-1 block text-xs text-muted-foreground">Explore ZYNOVATE products and solutions.</span></span>
+                              <ArrowUpRight className="ml-auto size-4 shrink-0 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
+                            </Link>
+                            <Link href="/products/apis" onClick={() => setMenu(null)} className="group/item flex items-center gap-4 rounded-2xl px-3 py-3 transition-colors hover:bg-secondary">
+                              <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-secondary text-primary"><Braces className="size-7" /></span>
+                              <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Plug & Play APIs</span><span className="mt-1 block text-xs text-muted-foreground">Browse the complete ZYNOVATE API directory.</span></span>
+                              <ArrowUpRight className="ml-auto size-4 shrink-0 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
+                            </Link>
                           </div>
                           <Link href="/works" onClick={() => setMenu(null)} className="mt-1 flex items-center justify-between rounded-xl border-t border-border px-3 py-3 text-xs font-semibold text-primary hover:bg-secondary">
                             Explore all works
@@ -535,28 +494,17 @@ export function Navbar() {
                       ))}
                     </ul>
                     {l.href === "/works" ? (
-                      <div className="mt-4 border-t border-border pt-3">
-                        <div className="mb-3 grid grid-cols-2 gap-2">
-                          <div className="flex items-center justify-between rounded-lg border border-border px-2 py-2">
-                            <Link href="/products" onClick={go("/products")} tabIndex={open ? 0 : -1} className="text-xs font-bold tracking-widest text-foreground">PRODUCTS<ArrowUpRight className="ml-1 inline size-3" /></Link>
-                            <button type="button" aria-label="Show product categories" aria-expanded={workExpandedSection === "products"} onClick={() => setWorkExpandedSection((section) => section === "products" ? null : "products")} tabIndex={open ? 0 : -1} className="p-1"><ChevronDown className={cn("size-3 transition-transform", workExpandedSection === "products" && "rotate-180")} /></button>
-                          </div>
-                          <div className="flex items-center justify-between rounded-lg border border-border px-2 py-2">
-                            <Link href="/products/apis" onClick={go("/products/apis")} tabIndex={open ? 0 : -1} className="text-xs font-bold tracking-widest text-foreground">API<ArrowUpRight className="ml-1 inline size-3" /></Link>
-                            <button type="button" aria-label="Show API categories" aria-expanded={workExpandedSection === "apis"} onClick={() => setWorkExpandedSection((section) => section === "apis" ? null : "apis")} tabIndex={open ? 0 : -1} className="p-1"><ChevronDown className={cn("size-3 transition-transform", workExpandedSection === "apis" && "rotate-180")} /></button>
-                          </div>
-                        </div>
-                        {workExpandedSection === "products" ? (
-                          <div className="grid grid-cols-2 gap-x-4 gap-y-3">
-                            {productMenuCategories.map((category) => (
-                              <section key={category.slug}>
-                                <Link href={`/products/${category.slug}`} onClick={go(`/products/${category.slug}`)} tabIndex={open ? 0 : -1} className="block py-1 text-xs font-bold text-foreground">{category.title}</Link>
-                                {category.items.map((product) => <Link key={product.slug} href={`/products/${product.slug}`} onClick={go(`/products/${product.slug}`)} tabIndex={open ? 0 : -1} className="block py-1 text-xs text-foreground/65">{product.title}</Link>)}
-                              </section>
-                            ))}
-                          </div>
-                        ) : null}
-                        {workExpandedSection === "apis" ? <div className="rounded-lg border border-border px-2 py-2"><ApiDirectoryDropdown /></div> : null}
+                      <div className="mt-4 space-y-1 border-t border-border pt-3">
+                        <Link href="/products" onClick={go("/products")} tabIndex={open ? 0 : -1} className="flex items-center gap-3 rounded-xl px-2 py-3 transition-colors hover:bg-secondary">
+                          <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary"><Layers3 className="size-5" /></span>
+                          <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Products</span><span className="mt-1 block text-xs text-muted-foreground">Explore ZYNOVATE products and solutions.</span></span>
+                          <ArrowUpRight className="ml-auto size-4 shrink-0 text-muted-foreground" />
+                        </Link>
+                        <Link href="/products/apis" onClick={go("/products/apis")} tabIndex={open ? 0 : -1} className="flex items-center gap-3 rounded-xl px-2 py-3 transition-colors hover:bg-secondary">
+                          <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary"><Braces className="size-5" /></span>
+                          <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Plug & Play APIs</span><span className="mt-1 block text-xs text-muted-foreground">Browse the complete ZYNOVATE API directory.</span></span>
+                          <ArrowUpRight className="ml-auto size-4 shrink-0 text-muted-foreground" />
+                        </Link>
                       </div>
                     ) : null}
                   </div>
