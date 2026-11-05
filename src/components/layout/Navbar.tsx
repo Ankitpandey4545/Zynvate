@@ -87,8 +87,7 @@ export function Navbar() {
   const [active, setActive] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
   const [menu, setMenu] = useState<null | "services" | "products" | "works">(null);
-  const [workProductsOpen, setWorkProductsOpen] = useState(false);
-  const [workApisOpen, setWorkApisOpen] = useState(false);
+  const [workExpandedSection, setWorkExpandedSection] = useState<null | "products" | "apis">(null);
   const works = featuredProjects();
   const [projectModalOpen, setProjectModalOpen] = useState(false);
   const [indicator, setIndicator] = useState<{ left: number; right: number } | null>(null);
@@ -342,15 +341,17 @@ export function Navbar() {
                             </Link>
                           ))}
                           <div className="mt-2 border-t border-border pt-3">
-                            <div className="mb-3 flex items-center justify-between px-2"><button type="button" aria-expanded={workProductsOpen} onClick={() => setWorkProductsOpen((expanded) => !expanded)} className="flex items-center gap-2 text-sm font-semibold tracking-wide text-foreground">PRODUCTS<ChevronDown className={cn("size-4 transition-transform", workProductsOpen && "rotate-180")} /></button><Link href="/products" onClick={() => setMenu(null)} className="text-xs font-semibold text-primary hover:underline">Explore all products ↗</Link></div>
-                            <div className="mb-3 rounded-xl border border-border bg-secondary/40 px-3 py-2">
-                              <button type="button" aria-expanded={workApisOpen} onClick={() => setWorkApisOpen((expanded) => !expanded)} className="flex w-full items-center justify-between text-sm font-semibold tracking-wide text-foreground">
-                                API
-                                <ChevronDown className={cn("size-4 transition-transform", workApisOpen && "rotate-180")} />
-                              </button>
-                              {workApisOpen ? <ApiDirectoryDropdown /> : null}
+                            <div className="grid gap-2 px-2 sm:grid-cols-2">
+                              <div className="flex items-center justify-between rounded-xl border border-border bg-secondary/40 px-3 py-2">
+                                <Link href="/products" onClick={() => setMenu(null)} className="text-sm font-semibold tracking-wide text-foreground hover:text-primary">PRODUCTS <ArrowUpRight className="ml-1 inline size-3.5" /></Link>
+                                <button type="button" aria-label="Show product categories" aria-expanded={workExpandedSection === "products"} onClick={() => setWorkExpandedSection((section) => section === "products" ? null : "products")} className="rounded-md p-1 hover:bg-secondary"><ChevronDown className={cn("size-4 transition-transform", workExpandedSection === "products" && "rotate-180")} /></button>
+                              </div>
+                              <div className="flex items-center justify-between rounded-xl border border-border bg-secondary/40 px-3 py-2">
+                                <Link href="/products/apis" onClick={() => setMenu(null)} className="text-sm font-semibold tracking-wide text-foreground hover:text-primary">API <ArrowUpRight className="ml-1 inline size-3.5" /></Link>
+                                <button type="button" aria-label="Show API categories" aria-expanded={workExpandedSection === "apis"} onClick={() => setWorkExpandedSection((section) => section === "apis" ? null : "apis")} className="rounded-md p-1 hover:bg-secondary"><ChevronDown className={cn("size-4 transition-transform", workExpandedSection === "apis" && "rotate-180")} /></button>
+                              </div>
                             </div>
-                            {workProductsOpen ? <div className="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-7">
+                            {workExpandedSection === "products" ? <div className="mt-3 grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-7">
                               {productMenuCategories.map((category) => (
                                 <section key={category.slug} className="min-w-0">
                                   <Link href={`/products/${category.slug}`} onClick={() => setMenu(null)} className="mb-2 flex min-h-10 items-center rounded-lg border-l-[3px] border-primary bg-secondary/70 px-3 text-[0.72rem] font-bold tracking-wide text-primary hover:bg-secondary">{category.title}</Link>
@@ -360,6 +361,7 @@ export function Navbar() {
                                 </section>
                               ))}
                             </div> : null}
+                            {workExpandedSection === "apis" ? <div className="mt-3 rounded-xl border border-border bg-secondary/30 px-3 py-2"><ApiDirectoryDropdown /></div> : null}
                           </div>
                           <Link href="/works" onClick={() => setMenu(null)} className="mt-1 flex items-center justify-between rounded-xl border-t border-border px-3 py-3 text-xs font-semibold text-primary hover:bg-secondary">
                             Explore all works
@@ -534,16 +536,17 @@ export function Navbar() {
                     </ul>
                     {l.href === "/works" ? (
                       <div className="mt-4 border-t border-border pt-3">
-                        <button type="button" aria-expanded={workProductsOpen} onClick={() => setWorkProductsOpen((expanded) => !expanded)} tabIndex={open ? 0 : -1} className="mb-2 flex items-center gap-2 text-xs font-bold tracking-widest text-primary">
-                          PRODUCTS<ChevronDown className={cn("size-3 transition-transform", workProductsOpen && "rotate-180")} />
-                        </button>
-                        <div className="mb-3 rounded-lg border border-border bg-secondary/40 px-3 py-2">
-                          <button type="button" aria-expanded={workApisOpen} onClick={() => setWorkApisOpen((expanded) => !expanded)} tabIndex={open ? 0 : -1} className="flex w-full items-center justify-between text-xs font-bold tracking-widest text-foreground">
-                            API<ChevronDown className={cn("size-3 transition-transform", workApisOpen && "rotate-180")} />
-                          </button>
-                          {workApisOpen ? <ApiDirectoryDropdown /> : null}
+                        <div className="mb-3 grid grid-cols-2 gap-2">
+                          <div className="flex items-center justify-between rounded-lg border border-border px-2 py-2">
+                            <Link href="/products" onClick={go("/products")} tabIndex={open ? 0 : -1} className="text-xs font-bold tracking-widest text-foreground">PRODUCTS<ArrowUpRight className="ml-1 inline size-3" /></Link>
+                            <button type="button" aria-label="Show product categories" aria-expanded={workExpandedSection === "products"} onClick={() => setWorkExpandedSection((section) => section === "products" ? null : "products")} tabIndex={open ? 0 : -1} className="p-1"><ChevronDown className={cn("size-3 transition-transform", workExpandedSection === "products" && "rotate-180")} /></button>
+                          </div>
+                          <div className="flex items-center justify-between rounded-lg border border-border px-2 py-2">
+                            <Link href="/products/apis" onClick={go("/products/apis")} tabIndex={open ? 0 : -1} className="text-xs font-bold tracking-widest text-foreground">API<ArrowUpRight className="ml-1 inline size-3" /></Link>
+                            <button type="button" aria-label="Show API categories" aria-expanded={workExpandedSection === "apis"} onClick={() => setWorkExpandedSection((section) => section === "apis" ? null : "apis")} tabIndex={open ? 0 : -1} className="p-1"><ChevronDown className={cn("size-3 transition-transform", workExpandedSection === "apis" && "rotate-180")} /></button>
+                          </div>
                         </div>
-                        {workProductsOpen ? (
+                        {workExpandedSection === "products" ? (
                           <div className="grid grid-cols-2 gap-x-4 gap-y-3">
                             {productMenuCategories.map((category) => (
                               <section key={category.slug}>
@@ -553,6 +556,7 @@ export function Navbar() {
                             ))}
                           </div>
                         ) : null}
+                        {workExpandedSection === "apis" ? <div className="rounded-lg border border-border px-2 py-2"><ApiDirectoryDropdown /></div> : null}
                       </div>
                     ) : null}
                   </div>
