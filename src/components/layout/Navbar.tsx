@@ -12,6 +12,7 @@ import {
   Menu,
   PenTool,
   Smartphone,
+  ShieldCheck,
   Sparkles,
   Workflow,
   Wrench,
@@ -58,7 +59,6 @@ export function Navbar() {
   const [active, setActive] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
   const [menu, setMenu] = useState<null | "services" | "products" | "works">(null);
-  const [meonOpen, setMeonOpen] = useState(false);
   const works = featuredProjects();
   const [projectModalOpen, setProjectModalOpen] = useState(false);
   const [indicator, setIndicator] = useState<{ left: number; right: number } | null>(null);
@@ -72,12 +72,10 @@ export function Navbar() {
     const closeOnOutsidePointer = (event: PointerEvent) => {
       if (event.target instanceof Node && listRef.current?.contains(event.target)) return;
       setMenu(null);
-      setMeonOpen(false);
     };
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setMenu(null);
-        setMeonOpen(false);
       }
     };
     document.addEventListener("pointerdown", closeOnOutsidePointer);
@@ -103,7 +101,6 @@ export function Navbar() {
   // Active section tracking
   useEffect(() => {
     setMenu(null);
-    setMeonOpen(false);
     if (pathname !== "/") {
       setActive(pathname.slice(1) || null);
       return;
@@ -179,7 +176,6 @@ export function Navbar() {
   const go = (href: string) => (e: React.MouseEvent) => {
     setOpen(false);
     setMenu(null);
-    setMeonOpen(false);
     if (href === "/contact") {
       if (pathname === "/contact") {
         e.preventDefault();
@@ -296,9 +292,7 @@ export function Navbar() {
                   {dropdownItems ? (
                     <div
                       className={cn(
-                        isWorks
-                          ? "fixed inset-x-4 top-[5.25rem] z-50 mx-auto w-auto max-w-[80rem] pt-2"
-                          : "absolute left-1/2 top-full z-50 w-[24rem] max-w-[calc(100vw-2rem)] -translate-x-1/2 pt-2",
+                        "absolute left-1/2 top-full z-50 w-[24rem] max-w-[calc(100vw-2rem)] -translate-x-1/2 pt-2",
                         menuOpen ? "visible" : "pointer-events-none invisible",
                       )}
                     >
@@ -318,21 +312,11 @@ export function Navbar() {
                             </Link>
                           ))}
                           <div className="mt-2 border-t border-border pt-3">
-                            <button type="button" aria-expanded={meonOpen} onClick={() => setMeonOpen((expanded) => !expanded)} className="group/item flex w-full items-center gap-4 rounded-2xl px-3 py-3 text-left transition-colors hover:bg-secondary">
-                              <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-secondary text-primary"><Layers3 className="size-7" /></span>
-                              <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Meon</span><span className="mt-1 block text-xs text-muted-foreground">Digital verification products & API suite</span></span>
-                              <ChevronDown className={cn("ml-auto size-4 shrink-0 text-muted-foreground transition-transform", meonOpen && "rotate-180")} />
-                            </button>
-                            {meonOpen ? <div className="ml-7 mt-1 grid gap-1 border-l border-border pl-4 sm:grid-cols-2">
-                              <Link href="/products/meon" onClick={() => setMenu(null)} className="group/item flex items-center justify-between rounded-xl px-3 py-3 transition-colors hover:bg-secondary">
-                                <span><span className="block text-sm font-semibold text-foreground">Products</span><span className="mt-1 block text-xs text-muted-foreground">Browse product solutions</span></span>
-                                <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
-                              </Link>
-                              <Link href="/products/apis" onClick={() => setMenu(null)} className="group/item flex items-center justify-between rounded-xl px-3 py-3 transition-colors hover:bg-secondary">
-                                <span><span className="block text-sm font-semibold text-foreground">API</span><span className="mt-1 block text-xs text-muted-foreground">Browse the complete API directory</span></span>
-                                <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
-                              </Link>
-                            </div> : null}
+                            <Link href="/products/meon" onClick={() => setMenu(null)} className="group/item flex w-full items-center gap-4 rounded-2xl px-3 py-3 text-left transition-colors hover:bg-secondary">
+                              <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary"><ShieldCheck className="size-6" strokeWidth={2.25} /></span>
+                              <span className="min-w-0"><span className="block text-lg font-semibold leading-tight tracking-[-0.04em] text-foreground">meon</span><span className="mt-1 block text-xs text-muted-foreground">Digital verification products & API suite</span></span>
+                              <ArrowUpRight className="ml-auto size-4 shrink-0 text-muted-foreground transition-transform group-hover/item:-translate-y-0.5 group-hover/item:translate-x-0.5" />
+                            </Link>
                           </div>
                           <Link href="/works" onClick={() => setMenu(null)} className="mt-1 flex items-center justify-between rounded-xl border-t border-border px-3 py-3 text-xs font-semibold text-primary hover:bg-secondary">
                             Explore all works
@@ -507,19 +491,11 @@ export function Navbar() {
                     </ul>
                     {l.href === "/works" ? (
                       <div className="mt-4 border-t border-border pt-3">
-                        <button type="button" aria-expanded={meonOpen} onClick={() => setMeonOpen((expanded) => !expanded)} tabIndex={open ? 0 : -1} className="flex w-full items-center gap-3 rounded-xl px-2 py-3 text-left transition-colors hover:bg-secondary">
-                          <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary"><Layers3 className="size-5" /></span>
-                          <span className="min-w-0"><span className="block text-sm font-semibold text-foreground">Meon</span><span className="mt-1 block text-xs text-muted-foreground">Digital verification products & API suite</span></span>
-                          <ChevronDown className={cn("ml-auto size-4 shrink-0 text-muted-foreground transition-transform", meonOpen && "rotate-180")} />
-                        </button>
-                        {meonOpen ? <div className="ml-5 grid gap-1 border-l border-border pl-3">
-                          <Link href="/products/meon" onClick={go("/products/meon")} tabIndex={open ? 0 : -1} className="flex items-center justify-between rounded-lg px-2 py-2 transition-colors hover:bg-secondary">
-                            <span><span className="block text-sm font-semibold text-foreground">Products</span><span className="mt-1 block text-xs text-muted-foreground">Browse product solutions</span></span><ArrowUpRight className="size-4 shrink-0 text-muted-foreground" />
-                          </Link>
-                          <Link href="/products/apis" onClick={go("/products/apis")} tabIndex={open ? 0 : -1} className="flex items-center justify-between rounded-lg px-2 py-2 transition-colors hover:bg-secondary">
-                            <span><span className="block text-sm font-semibold text-foreground">API</span><span className="mt-1 block text-xs text-muted-foreground">Browse the complete API directory</span></span><ArrowUpRight className="size-4 shrink-0 text-muted-foreground" />
-                          </Link>
-                        </div> : null}
+                        <Link href="/products/meon" onClick={go("/products/meon")} tabIndex={open ? 0 : -1} className="flex w-full items-center gap-3 rounded-xl px-2 py-3 text-left transition-colors hover:bg-secondary">
+                          <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary"><ShieldCheck className="size-5" strokeWidth={2.25} /></span>
+                          <span className="min-w-0"><span className="block text-lg font-semibold leading-tight tracking-[-0.04em] text-foreground">meon</span><span className="mt-1 block text-xs text-muted-foreground">Digital verification products & API suite</span></span>
+                          <ArrowUpRight className="ml-auto size-4 shrink-0 text-muted-foreground" />
+                        </Link>
                       </div>
                     ) : null}
                   </div>
