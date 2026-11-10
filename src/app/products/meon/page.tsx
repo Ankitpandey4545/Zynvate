@@ -9,33 +9,25 @@ export const metadata: Metadata = {
   description: "Explore Meon products and a selection of verification APIs from ZYNOVATE.",
 };
 
-const featuredApiPaths = [
-  "/digilocker-api",
-  "/digilocker-aadhaar-fetch-api",
-  "/digilocker-pan-fetch-api",
-  "/digilocker-driving-licence-fetch-api",
-  "/10th-marksheet-verification-api",
-  "/12th-marksheet-verification-api",
-  "/penny-drop-api",
-  "/reverse-penny-drop-api",
-  "/ocr-verification-api",
-  "/enach-verification-api",
-  "/aadhaar-esign-api",
-  "/account-aggregator-api",
-  "/gst-verification-api",
-  "/vehicle-rc-verification-api",
-  "/vahan-verification-api",
-  "/rc-owner-details-api",
-  "/rc-status-check-by-vehicle-number-api",
-  "/fastag-id-to-rc-details-api",
-  "/vehicle-pollution-check-api",
-  "/vehicle-monitoring-api",
-];
-const apisByPath = new Map(directory.apis.map((api, id) => [api.path, { ...api, id }]));
-const featuredApis = featuredApiPaths.flatMap((path) => {
-  const api = apisByPath.get(path);
-  return api ? [api] : [];
-});
+const apisWithIds = directory.apis.map((api, id) => ({ ...api, id }));
+const apiGroups = [
+  { title: "DigiLocker API", paths: ["/digilocker-api", "/digilocker-aadhaar-fetch-api", "/digilocker-pan-fetch-api", "/digilocker-driving-licence-fetch-api"] },
+  { title: "Marksheet Verification", paths: ["/10th-marksheet-verification-api", "/12th-marksheet-verification-api"] },
+  { title: "Penny / Reverse Penny Drop", paths: ["/penny-drop-api", "/reverse-penny-drop-api"] },
+  { title: "OCR Verification", paths: ["/ocr-verification-api"] },
+  { title: "eNACH Verification", paths: ["/enach-verification-api"] },
+  { title: "Aadhaar eSign", paths: ["/aadhaar-esign-api"] },
+  { title: "Account Aggregator", paths: ["/account-aggregator-api"] },
+].map((group) => ({
+  ...group,
+  apis: group.paths.flatMap((path) => {
+    const api = apisWithIds.find((item) => item.path === path);
+    return api ? [api] : [];
+  }),
+}));
+const vehicleApis = apisWithIds.filter((api) => api.collection === "Vehicle Verification APIs");
+const gstApis = apisWithIds.filter((api) => api.path === "/gst-verification-api");
+const selectedApiCount = apiGroups.reduce((count, group) => count + group.apis.length, 0) + vehicleApis.length + gstApis.length;
 const meonProductCategories = productMenuCategories.filter((category) => category.title !== "PLUG & PLAY APIs");
 
 export default function MeonPage() {
@@ -58,7 +50,7 @@ export default function MeonPage() {
                 ))}
               </ul>
             </div>
-            <p className="shrink-0 text-sm text-background/65"><span className="font-mono text-3xl font-semibold text-clay-light">{productCount}</span> products <span className="px-2">·</span> <span className="font-mono text-3xl font-semibold text-clay-light">20</span> APIs</p>
+            <p className="shrink-0 text-sm text-background/65"><span className="font-mono text-3xl font-semibold text-clay-light">{productCount}</span> products <span className="px-2">·</span> <span className="font-mono text-3xl font-semibold text-clay-light">{selectedApiCount}</span> APIs</p>
           </div>
         </div>
       </section>
@@ -98,20 +90,54 @@ export default function MeonPage() {
           <section aria-labelledby="meon-apis-heading" className="lg:sticky lg:top-28">
             <div className="mb-5 flex items-end justify-between border-b border-border pb-4">
               <div>
-                <h2 id="meon-apis-heading" className="display mt-2 text-3xl md:text-4xl">20 APIs</h2>
+                <h2 id="meon-apis-heading" className="display mt-2 text-3xl md:text-4xl">Selected APIs</h2>
               </div>
-              <Link href="/products/apis" className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline">All APIs <ArrowUpRight className="size-3.5" /></Link>
             </div>
-            <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-1">
-              {featuredApis.map((api) => (
-                <li key={api.path}>
-                  <Link href={`/products/apis/catalog/${api.id}`} className="group flex min-h-14 items-center justify-between gap-3 rounded-xl border border-border bg-background px-4 py-3 transition-colors hover:border-primary/50 hover:bg-card">
-                    <span className="text-sm font-medium leading-snug text-foreground group-hover:text-primary">{api.title}</span>
-                    <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
-                  </Link>
-                </li>
+            <div className="space-y-4">
+              {apiGroups.map((group) => (
+                <section key={group.title} className="rounded-2xl border border-border bg-background p-4">
+                  <h3 className="mb-3 text-sm font-semibold text-foreground">{group.title}</h3>
+                  <ul className="grid gap-2">
+                    {group.apis.map((api) => (
+                      <li key={api.path}>
+                        <Link href={`/products/apis/catalog/${api.id}`} className="group flex min-h-12 items-center justify-between gap-3 rounded-xl border border-border bg-secondary px-3 py-2.5 transition-colors hover:border-primary/50 hover:bg-card">
+                          <span className="text-sm font-medium leading-snug text-foreground group-hover:text-primary">{api.title}</span>
+                          <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               ))}
-            </ul>
+              <details className="rounded-2xl border border-border bg-background p-4">
+                <summary className="cursor-pointer text-sm font-semibold text-foreground">
+                  Vehicle Related APIs <span className="ml-2 font-mono text-xs font-medium text-muted-foreground">{vehicleApis.length}</span>
+                </summary>
+                <ul className="mt-3 grid gap-2">
+                  {vehicleApis.map((api) => (
+                    <li key={api.path}>
+                      <Link href={`/products/apis/catalog/${api.id}`} className="group flex min-h-12 items-center justify-between gap-3 rounded-xl border border-border bg-secondary px-3 py-2.5 transition-colors hover:border-primary/50 hover:bg-card">
+                        <span className="text-sm font-medium leading-snug text-foreground group-hover:text-primary">{api.title}</span>
+                        <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+              <section className="rounded-2xl border border-border bg-background p-4">
+                <h3 className="mb-3 text-sm font-semibold text-foreground">GST Verification</h3>
+                <ul className="grid gap-2">
+                  {gstApis.map((api) => (
+                    <li key={api.path}>
+                      <Link href={`/products/apis/catalog/${api.id}`} className="group flex min-h-12 items-center justify-between gap-3 rounded-xl border border-border bg-secondary px-3 py-2.5 transition-colors hover:border-primary/50 hover:bg-card">
+                        <span className="text-sm font-medium leading-snug text-foreground group-hover:text-primary">{api.title}</span>
+                        <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            </div>
           </section>
         </div>
       </section>
