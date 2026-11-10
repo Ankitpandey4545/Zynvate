@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const apisWithIds = directory.apis.map((api, id) => ({ ...api, id }));
 const apiGroups = [
-  { title: "DigiLocker API", paths: ["/digilocker-api", "/digilocker-aadhaar-fetch-api", "/digilocker-pan-fetch-api", "/digilocker-driving-licence-fetch-api"] },
+  { title: "DigiLocker", paths: ["/digilocker-aadhaar-fetch-api", "/digilocker-pan-fetch-api", "/digilocker-driving-licence-fetch-api"] },
   { title: "Marksheet Verification", paths: ["/10th-marksheet-verification-api", "/12th-marksheet-verification-api"] },
   { title: "Penny / Reverse Penny Drop", paths: ["/penny-drop-api", "/reverse-penny-drop-api"] },
   { title: "OCR Verification", paths: ["/ocr-verification-api"] },
