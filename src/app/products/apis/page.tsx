@@ -3,7 +3,7 @@ import { ApiCatalog } from "@/components/sections/ApiCatalog";
 
 export const metadata: Metadata = {
   title: "API Directory | ZYNOVATE",
-  description: "Search and browse ZYNOVATE's Plug & Play API directory across eight collections.",
+  description: "Search and browse ZYNOVATE's verification APIs by collection.",
 };
 
 export default function ApiDirectoryPage() {

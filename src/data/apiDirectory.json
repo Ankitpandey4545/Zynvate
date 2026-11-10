@@ -7,7 +7,7 @@
     },
     {
       "name": "CKYC & Verification",
-      "count": 26,
+      "count": 27,
       "description": "First CKYC and verification-focused batch."
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "name": "Telecom, Video KYC & eSign",
-      "count": 28,
+      "count": 30,
       "description": "Fourth batch covering telecom intelligence, video KYC, eSign, signature, and credit report workflows."
     },
     {
@@ -32,8 +32,13 @@
     },
     {
       "name": "Use-case Verification APIs",
-      "count": 109,
+      "count": 82,
       "description": "Folder batch covering Aadhaar, PAN, vehicle, FSSAI, DigiLocker, MSME, academic, and business verification APIs."
+    },
+    {
+      "name": "Vehicle Verification APIs",
+      "count": 32,
+      "description": "Vehicle registration, RC, FASTag, challan, insurance, valuation, and identity verification APIs."
     },
     {
       "name": "International, Risk & Utilities",
@@ -415,7 +420,7 @@
     {
       "title": "Mobile Number to Vehicle RC API",
       "path": "/mobile-number-to-vehicle-rc-api",
-      "collection": "OCR & Contact Intelligence"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Phone Number to Udyam Verification API",
@@ -700,7 +705,7 @@
     {
       "title": "Aadhaar OKYC for Vehicle Rentals",
       "path": "/aadhaar-okyc-for-vehicle-rentals",
-      "collection": "Aadhaar & Core KYC"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Aadhaar to Credit Report API",
@@ -1175,7 +1180,7 @@
     {
       "title": "Aadhaar KYC for Vehicle Rentals – Fast, Secure & Paperless Customer Verification",
       "path": "/aadhaar-kyc-for-vehicle-rentals",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Aadhaar Offline Airport Check-In API",
@@ -1285,27 +1290,27 @@
     {
       "title": "Bike Price Check API – Instantly Access Accurate Two-Wheeler Valuation Data",
       "path": "/bike-price-check-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Car Price Check API – Instantly Access Accurate Car Valuation and Market Pricing",
       "path": "/car-price-check-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Challan Monitoring API – Continuously Track Traffic Challans in Real Time",
       "path": "/challan-monitoring-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Challan Payment API – Enable Seamless Traffic Challan Payments Digitally",
       "path": "/challan-payment-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Chassis Number to RC API – Retrieve Vehicle Registration Details Using Chassis Number",
       "path": "/chassis-number-to-rc-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "CKYC Download API – Retrieve Customer KYC Records Instantly from the Central KYC Registry",
@@ -1380,22 +1385,22 @@
     {
       "title": "FASTag ID To RC Details API – Retrieve Complete Vehicle RC Information Using FASTag ID",
       "path": "/fastag-id-to-rc-details-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "FASTag Monitoring API – Continuously Monitor FASTag Status and Activity in Real Time",
       "path": "/fastag-monitoring-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "FASTag To VRN API – Instantly Retrieve Vehicle Registration Numbers from FASTag IDs",
       "path": "/fastag-to-vrn-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Fastag Verification API",
       "path": "/fastag-verification-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Form 16 OCR API – Instantly Extract Salary and Tax Data from Form 16",
@@ -1440,7 +1445,7 @@
     {
       "title": "Insurance Monitoring API – Continuously Monitor Vehicle Insurance Status in Real Time",
       "path": "/insurance-monitoring-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "ITR Compliance Check API – Instantly Verify Income Tax Return Filing Compliance",
@@ -1535,47 +1540,47 @@
     {
       "title": "RC Application Status Check API – Track Vehicle Registration Application Status in Real Time",
       "path": "/rc-application-status-check-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "RC Owner Details API – Instantly Retrieve Vehicle Owner Information",
       "path": "/rc-owner-details-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "RC Owner History API – Access Complete Vehicle Ownership History Instantly",
       "path": "/rc-owner-history-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "RC Status Check By Vehicle Number API – Verify Vehicle Registration Status Instantly",
       "path": "/rc-status-check-by-vehicle-number-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "RC to Chassis API – Instantly Retrieve Chassis Number from Vehicle Registration Number",
       "path": "/rc-to-chassis-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "RC to FASTag Balance Check API – Instantly Check FASTag Balance Using Vehicle Registration Number",
       "path": "/rc-to-fastag-balance-check-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "RC Vehicle Service History API – Access Vehicle Maintenance and Service Records Instantly",
       "path": "/rc-vehicle-service-history-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "RC with Financer Details API – Access Vehicle Registration and Financer Information Instantly",
       "path": "/rc-with-financer-details-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Reverse FASTag API – Retrieve Vehicle Details Using FASTag ID",
       "path": "/reverse-fastag-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Secure Office Entry With Aadhaar",
@@ -1590,7 +1595,7 @@
     {
       "title": "Stolen Vehicle Verification API – Instantly Check Stolen Vehicle Status in Real Time",
       "path": "/stolen-vehicle-verification-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Student Verification with Aadhaar API",
@@ -1635,42 +1640,42 @@
     {
       "title": "Vahan Verification API – Access Comprehensive Vehicle Information in Real Time",
       "path": "/vahan-verification-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Vehicle Application Status API – Track Vehicle Application Status in Real Time",
       "path": "/vehicle-application-status-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Vehicle Monitoring API – Continuously Monitor Vehicle Records and Receive Real-Time Alerts",
       "path": "/vehicle-monitoring-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Vehicle Pollution Check API – Instantly Verify PUC Status and Emission Compliance",
       "path": "/vehicle-pollution-check-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Vehicle Price Check API – Instantly Access Accurate Vehicle Valuation Data",
       "path": "/vehicle-price-check-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Vehicle RC to Mobile Number API – Retrieve Registered Mobile Information from Vehicle Details",
       "path": "/vehicle-rc-to-mobile-number-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Vehicle RC Verification API – Instantly Verify Vehicle Registration Certificate Details",
       "path": "/vehicle-rc-verification-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Vehicle Tracking API – Track Vehicle Movement and Location in Real Time",
       "path": "/vehicle-tracking-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Video Aadhaar Masking – Secure Sensitive Aadhaar Data in Customer Videos",
@@ -1680,7 +1685,7 @@
     {
       "title": "VIN Number Check API – Verify Vehicle Identity Using VIN Instantly",
       "path": "/vin-number-check-api",
-      "collection": "Use-case Verification APIs"
+      "collection": "Vehicle Verification APIs"
     },
     {
       "title": "Visitor Management via Aadhaar API",
@@ -2051,6 +2056,46 @@
       "title": "Vulnerability Assessment and Penetration Testing (VAPT)",
       "path": "/vulnerability-assessment-and-penetration-testing-vapt",
       "collection": "International, Risk & Utilities"
+    },
+    {
+      "title": "Aadhaar Fetch via DigiLocker API",
+      "path": "/digilocker-aadhaar-fetch-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "PAN Fetch via DigiLocker API",
+      "path": "/digilocker-pan-fetch-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Driving Licence Fetch via DigiLocker API",
+      "path": "/digilocker-driving-licence-fetch-api",
+      "collection": "Use-case Verification APIs"
+    },
+    {
+      "title": "Penny Drop API",
+      "path": "/penny-drop-api",
+      "collection": "Aadhaar & Core KYC"
+    },
+    {
+      "title": "OCR Verification API",
+      "path": "/ocr-verification-api",
+      "collection": "OCR & Contact Intelligence"
+    },
+    {
+      "title": "eNACH Verification API",
+      "path": "/enach-verification-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Aadhaar eSign API",
+      "path": "/aadhaar-esign-api",
+      "collection": "Telecom, Video KYC & eSign"
+    },
+    {
+      "title": "Account Aggregator API",
+      "path": "/account-aggregator-api",
+      "collection": "CKYC & Verification"
     }
   ]
 }

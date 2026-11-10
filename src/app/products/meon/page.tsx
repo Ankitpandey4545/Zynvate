@@ -9,7 +9,33 @@ export const metadata: Metadata = {
   description: "Explore Meon products and a selection of verification APIs from ZYNOVATE.",
 };
 
-const featuredApis = directory.apis.slice(0, 20);
+const featuredApiPaths = [
+  "/digilocker-api",
+  "/digilocker-aadhaar-fetch-api",
+  "/digilocker-pan-fetch-api",
+  "/digilocker-driving-licence-fetch-api",
+  "/10th-marksheet-verification-api",
+  "/12th-marksheet-verification-api",
+  "/penny-drop-api",
+  "/reverse-penny-drop-api",
+  "/ocr-verification-api",
+  "/enach-verification-api",
+  "/aadhaar-esign-api",
+  "/account-aggregator-api",
+  "/gst-verification-api",
+  "/vehicle-rc-verification-api",
+  "/vahan-verification-api",
+  "/rc-owner-details-api",
+  "/rc-status-check-by-vehicle-number-api",
+  "/fastag-id-to-rc-details-api",
+  "/vehicle-pollution-check-api",
+  "/vehicle-monitoring-api",
+];
+const apisByPath = new Map(directory.apis.map((api, id) => [api.path, { ...api, id }]));
+const featuredApis = featuredApiPaths.flatMap((path) => {
+  const api = apisByPath.get(path);
+  return api ? [api] : [];
+});
 const meonProductCategories = productMenuCategories.filter((category) => category.title !== "PLUG & PLAY APIs");
 
 export default function MeonPage() {
@@ -77,9 +103,9 @@ export default function MeonPage() {
               <Link href="/products/apis" className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline">All APIs <ArrowUpRight className="size-3.5" /></Link>
             </div>
             <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-1">
-              {featuredApis.map((api, index) => (
-                <li key={`${api.path}-${index}`}>
-                  <Link href={`/products/apis/catalog/${index}`} className="group flex min-h-14 items-center justify-between gap-3 rounded-xl border border-border bg-background px-4 py-3 transition-colors hover:border-primary/50 hover:bg-card">
+              {featuredApis.map((api) => (
+                <li key={api.path}>
+                  <Link href={`/products/apis/catalog/${api.id}`} className="group flex min-h-14 items-center justify-between gap-3 rounded-xl border border-border bg-background px-4 py-3 transition-colors hover:border-primary/50 hover:bg-card">
                     <span className="text-sm font-medium leading-snug text-foreground group-hover:text-primary">{api.title}</span>
                     <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
                   </Link>
